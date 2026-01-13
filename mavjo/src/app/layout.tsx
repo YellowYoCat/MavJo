@@ -18,11 +18,25 @@ export default function RootLayout({
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/services">Services</Link>
         </nav>
-        <br/>
-        <hr/>
+        <br />
+        <hr />
 
 
 
+        <Link href="/consultation" className="consultation-link">
+          <div className="consultation-banner">
+            <Image
+              src="/imgs/btn.png"
+              alt="Book a Consultation"
+              width={200}
+              height={200}
+              className="banner-image"
+            />
+            <div className="banner-overlay">
+              <span className="banner-text">Book a Consultation</span>
+            </div>
+          </div>
+        </Link>
         <footer>
           <div className="footer-links">
             <h5><Link href="/about">About</Link></h5>
