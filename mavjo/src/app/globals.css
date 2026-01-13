@@ -1,9 +1,6 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=DynaPuff:wght@400..700&family=Fuzzy+Bubbles:wght@400;700&family=Gajraj+One&family=Jolly+Lodger&family=Luckiest+Guy&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer utilities;
 
 @theme inline {
   --color-background: var(--background);
@@ -12,15 +9,79 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+.gajraj-one-regular {
+  font-family: "Gajraj One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+  background-color: black;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 80px; /* Footer height */
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: "Gajraj One", sans-serif;
+  font-style: normal;
+  font-size: 35px;
+  color: white;
+  
+}
+
+a{
+  color: white;
+}
+
+hr{
+  border-width: 5px;
+  color: white;
+}
+
+
+.footer-heading {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #333;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.footer-content {
+  display: flex;
+  gap: 30px; /* Space between headings */
+  align-items: center;
+}
+
+
+

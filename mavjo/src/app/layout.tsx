@@ -1,19 +1,44 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-
+// app/layout.tsx
+import Link from "next/link";
+import Image from "next/image";
+import './globals.css'
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html>
+    <html lang="en">
       <body>
-        {children}
+        <nav>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/home"><Image src="/imgs/Logo.png" alt="Logo" width={200} height={150} /></Link>
+          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/services">Services</Link>
+        </nav>
+        <br/>
+        <hr/>
+
+
+
+        <footer>
+          <div className="footer-links">
+            <h5><Link href="/about">About</Link></h5>
+            <h5><Link href="/contact">Contact</Link></h5>
+          </div>
+
+          <div className="footer-content">
+            <h2 className="footer-heading">Illustrations</h2>
+            <h2 className="footer-heading">Designs</h2>
+            <h2 className="footer-heading">Copyright © 2026</h2>
+          </div>
+        </footer>
+        <main>
+          {children}
+        </main>
       </body>
     </html>
-  );
+  )
 }
