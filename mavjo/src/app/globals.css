@@ -74,32 +74,41 @@ footer {
 
 .footer-links {
   display: flex;
-  gap: 20px; /* Space between links */
+  gap: 20px; 
 }
 
 .footer-content {
   display: flex;
-  gap: 30px; /* Space between headings */
+  gap: 30px; 
   align-items: center;
 }
 
-
-/* Consultation Banner Styles */
 .consultation-banner {
   position: relative;
-  
   margin: 20px 0;
+  top: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-image-container {
   position: relative;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 200px; 
+  margin: 0 auto;
 }
 
 .banner-image {
+  width: 200px;
+  max-width: 200px;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
+  display: block;
 }
 
 .banner-text {
@@ -108,9 +117,10 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 2;
+  width: 80%;
 }
 
 .banner-text h1 {
@@ -136,11 +146,11 @@ footer {
   background-color: #0051b3;
 }
 
-/* For overlay effect */
+
 .banner-overlay {
-  position: absolute;
+ 
   top: 0;
-  left: 0;
+  left: 0; 
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
@@ -150,17 +160,16 @@ footer {
   border-radius: 8px;
 }
 
-/* If using as a link */
 .consultation-link {
   display: block;
   text-decoration: none;
+  width: 100%;
 }
 
 .consultation-link:hover .banner-text {
-  color: #ffd700; /* Gold color on hover */
+  color: darkgray; 
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .banner-text h1 {
     font-size: 1.8rem;
