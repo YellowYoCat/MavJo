@@ -33,7 +33,7 @@ export default function RootLayout({
               className="banner-image"
             />
             <div className="banner-overlay">
-              <span className="banner-text">Book a Consultation</span>
+              <span className="banner-text" >Book a Consultation</span>
             </div>
           </div>
         </Link>
