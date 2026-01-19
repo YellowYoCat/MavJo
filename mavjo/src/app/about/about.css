@@ -1,4 +1,7 @@
-body{
+.body{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top:-80px;
     font-family: "Gajraj One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -10,4 +13,39 @@ body{
     font-weight: bold;
     font-style: normal;
     color: white;
+    padding-right: 50px;
+}
+
+.portfolio-banner {
+  position: relative;
+  margin: 20px 0;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.consultation-link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+.mm{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h2{
+    font-size: 80px;
+    margin: 20px;
+}
+
+h1{
+    font-size: 128px;
+    margin-bottom: 10px;
 }
