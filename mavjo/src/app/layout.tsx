@@ -14,7 +14,7 @@ export default function RootLayout({
         <nav>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
-          <Link href="/home"><Image src="/imgs/Logo.png" alt="Logo" width={200} height={150} /></Link>
+          <Link href="/home"><Image src="/imgs/JM_white.png" alt="Logo" width={200} height={150} /></Link>
           <Link href="/portfolio">Portfolio</Link>
           <Link href="/services">Services</Link>
         </nav>
@@ -44,8 +44,8 @@ export default function RootLayout({
           </div>
 
           <div className="footer-content">
-            <h2 className="footer-heading">Illustrations</h2>
-            <h2 className="footer-heading">Designs</h2>
+            <h2 className="footer-heading">Portfolio</h2>
+            <h2 className="footer-heading">Services</h2>
             <h2 className="footer-heading">Copyright © 2026</h2>
           </div>
         </footer>
