@@ -6,7 +6,7 @@ const page = () => {
     <section className='about'>
       <h1>ABOUT</h1>
       <div className='nav-links'>
-      <p className='sub'>Home</p> <p> About</p>
+      {/* <p className='sub'>Home</p> <p> About</p> */}
       </div>
       <p className='body-text'>
         Welcome to MavJo Designs! We are a creative agency dedicated to bringing your ideas to life through innovative design solutions. Our team of talented designers and developers work closely with clients to create stunning visuals and user-friendly experiences.
