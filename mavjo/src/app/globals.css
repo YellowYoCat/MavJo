@@ -86,7 +86,7 @@ footer {
 .consultation-banner {
   position: relative;
   margin: 20px 0;
-  top: 600px;
+  bottom: 600%;
   display: flex;
   justify-content: center;
   align-items: center;

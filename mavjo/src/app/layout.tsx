@@ -20,23 +20,24 @@ export default function RootLayout({
         </nav>
         <br />
         <hr />
+        <main className="main-content">
+          {children}
 
-
-
-        <Link href="/consultation" className="consultation-link">
-          <div className="consultation-banner">
-            <Image
-              src="/imgs/btn.png"
-              alt="Book a Consultation"
-              width={200}
-              height={200}
-              className="banner-image"
-            />
-            <div className="banner-overlay">
-              <span className="banner-text" >Book a Consultation</span>
+          <Link href="/consultation" className="consultation-link">
+            <div className="consultation-banner">
+              <Image
+                src="/imgs/btn.png"
+                alt="Book a Consultation"
+                width={200}
+                height={200}
+                className="banner-image"
+              />
+              <div className="banner-overlay">
+                <span className="banner-text">Book a Consultation</span>
+              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </main>
         <footer>
           <div className="footer-links">
             <h5><Link href="/about">About</Link></h5>
@@ -49,9 +50,6 @@ export default function RootLayout({
             <h2 className="footer-heading">Copyright © 2026</h2>
           </div>
         </footer>
-        <main>
-          {children}
-        </main>
       </body>
     </html>
   )
