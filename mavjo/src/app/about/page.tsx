@@ -47,7 +47,7 @@ const page = () => {
       <br></br>
       <div className='mm'>
         <div>
-          <img src="/imgs/johonna.png" alt="johanna johson" width={500} height={500} />
+          <img src="/imgs/johonna.png" alt="johanna johsoni" width={500} height={500} />
         </div>
         <div>
           <h2> JOHOANNA JOHNSON</h2>

@@ -218,6 +218,7 @@ p{
           align-items: center;
           cursor: pointer;
           list-style: none;
+          letter-spacing: 5px;
         }
         
         .faq-summary::-webkit-details-marker {
@@ -244,12 +245,14 @@ p{
         .faq-content {
           padding-top: 12px;
           animation: fadeIn 0.3s ease;
+          font-family: 'Courier New', Courier, monospace;
         }
         
         .faq-content p {
           margin: 0;
           color: white;
           line-height: 1.6;
+          font-size: 25px;
         }
         
         @keyframes fadeIn {
