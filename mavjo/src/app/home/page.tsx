@@ -5,7 +5,7 @@ import './home.css';
 const SPage = () => {
   // Data for 3x3 grid items
   const gridItems = [
-    { id: 1, title: "Web Design", img: "/imgs/imgButton.jpg",  href: "/services/webdev"  },
+    { id: 1, title: "Web Design", img: "/imgs/imgButton.jpg", href: "/services/webdev" },
     { id: 2, title: "UI/UX Design", img: "/imgs/imgButton.jpg", href: '/services/uiuxdesign' },
     { id: 3, title: "Web Development", img: "/imgs/imgButton.jpg", href: '/services/webdev' },
     { id: 4, title: "Documentation", img: "/imgs/imgButton.jpg", href: '/services/doc' },
@@ -18,6 +18,21 @@ const SPage = () => {
 
   return (
     <>
+      <div className='logo-banner'>
+        <div className='logo-container'>
+          <Image
+            src="/imgs/JM_white.png"
+            width={600}
+            height={400}
+            className='landinglogo'
+            alt='logo'
+            priority
+          />
+          <h1 className='logo-overlay-text'>
+            MAKING YOUR DREAMS A REALITY
+          </h1>
+        </div>
+      </div>
       <br />
       <br />
       <br />
@@ -48,8 +63,8 @@ const SPage = () => {
         <section className="grid-section">
           <div className="images-grid">
             {gridItems.map((item) => (
-              <Link 
-                key={item.id} 
+              <Link
+                key={item.id}
                 href={item.href}
                 className="grid-link"
               >
