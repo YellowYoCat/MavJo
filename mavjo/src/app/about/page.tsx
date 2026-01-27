@@ -39,7 +39,7 @@ const page = () => {
           </Link>
         </div>
         <div>
-          <img src="/imgs/erin.jpg" alt="Madison Mitchell" width={500} height={500} />
+          <img className='erin' src="/imgs/erin.jpg" alt="Madison Mitchell" width={500} height={500} />
         </div>
       </div>
       <br></br>
@@ -47,10 +47,10 @@ const page = () => {
       <br></br>
       <div className='mm'>
         <div>
-          <img src="/imgs/johonna.png" alt="johanna johsoni" width={500} height={500} />
+          <img className='johanna' src="/imgs/johonna.png" alt="johanna johsoni" width={500} height={500} />
         </div>
         <div>
-          <h2> JOHOANNA JOHNSON</h2>
+          <h2> JOHANNA JOHNSON</h2>
           <p className='body-text'>
             I’m a motivated, fast-learning developer with a strong focus on front-end development and creating great user experiences. I enjoy designing clean, intuitive interfaces and working with modern frameworks and smooth animations. While front-end and UI/UX are my main passions, I also have a solid foundation in full-stack and back-end development, which allows me to contribute wherever the team needs support.          </p>
 

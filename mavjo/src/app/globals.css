@@ -16,6 +16,73 @@
   }
 } */
 
+/* SERVICES DROPDOWN WRAPPER */
+.services-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* TRIGGER LINK */
+.services-trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+  position: absolute;
+  top: 130%;
+  right: 0;
+
+  min-width: 220px;
+  padding: 6px 0;
+
+  background: rgba(28, 28, 30, 0.95);
+  backdrop-filter: blur(12px);
+
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+
+  z-index: 1000;
+}
+
+/* INDIVIDUAL ITEMS */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 16px;
+  font-size: 0.95rem;
+
+  color: #eaeaea;
+  text-decoration: none;
+
+  transition: background 0.15s ease;
+}
+
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+
+.dropdown-item:first-child {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.dropdown-item:last-child {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+
 .gajraj-one-regular {
   font-family: "Gajraj One", sans-serif;
   font-weight: 400;

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import './globals.css'
+import ServicesDropdown from "./servicesDropdown";
 
 export default function RootLayout({
   children,
@@ -16,7 +17,8 @@ export default function RootLayout({
           <Link href="/contact">Contact</Link>
           <Link href="/home"><Image src="/imgs/JM_white.png" alt="Logo" width={200} height={150} /></Link>
           <Link href="/portfolio">Portfolio</Link>
-          <Link href="/services">Services</Link>
+          <ServicesDropdown/>
+          {/* <Link href="/services">Services</Link> */}
         </nav>
         <br />
         <hr />
@@ -46,6 +48,7 @@ export default function RootLayout({
 
           <div className="footer-content">
             <h2 className="footer-heading">Portfolio</h2>
+           
             <h2 className="footer-heading">Services</h2>
             <h2 className="footer-heading">Copyright © 2026</h2>
           </div>
