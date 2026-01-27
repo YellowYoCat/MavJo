@@ -22,34 +22,50 @@
   font-style: normal;
 }
 
-html{
+html {
   background-color: black;
 }
 
 body {
   position: relative;
   min-height: 100vh;
-  padding-bottom: 80px; /* Footer height */
+  padding-bottom: 80px;
+  /* Footer height */
 }
 
-nav {
+.site-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 0 60px;
   font-family: "Gajraj One", sans-serif;
-  font-style: normal;
   font-size: 35px;
-  color: white;
-  
 }
 
-a{
+.nav-group {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.nav-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+a {
   color: white;
 }
 
-hr{
+hr {
   border-width: 5px;
   color: white;
 }
@@ -74,12 +90,12 @@ footer {
 
 .footer-links {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .footer-content {
   display: flex;
-  gap: 30px; 
+  gap: 30px;
   align-items: center;
 }
 
@@ -98,7 +114,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 200px; 
+  max-width: 200px;
   margin: 0 auto;
 }
 
@@ -149,9 +165,9 @@ footer {
 
 
 .banner-overlay {
- 
+
   top: 0;
-  left: 0; 
+  left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.4);
@@ -168,34 +184,85 @@ footer {
 }
 
 .consultation-link:hover .banner-text {
-  color: darkgray; 
+  color: darkgray;
 }
 
 @media (max-width: 768px) {
   .banner-text h1 {
     font-size: 1.8rem;
   }
-  
+
   .consultation-button {
     padding: 10px 20px;
     font-size: 1rem;
   }
+
+  .decorative {
+    padding-top: 70px;
+    width: 80px;
+    height: 10px;
+  }
+
+  .nav-links {
+    margin-left: -90px;
+    margin-top: -30px;
+  }
+
+  .sub {
+    font-size: medium;
+  }
+
+  .subB {
+    font-size: medium;
+    margin-top: 15px;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    margin-left:-50px;
+    font-size: 22px;
+  }
+
+  .nav-group {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 12px 24px;
+  }
+
+  .nav-logo {
+    width: 140px;
+  }
+
+  .site-nav a {
+    font-size: 18px;
+    letter-spacing: 0.08em;
+  }
 }
 
-.sub{
+.sub {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   font-style: normal;
   margin-top: 20px;
+  font-size: large;
 }
 
-.nav-links{
+.subB {
+  font-weight: bold;
+  font-style: normal;
+  font-size: large;
+}
+
+/* .nav-links{
   display: flex;
   gap: 20px;
   margin-top: -30px;
-}
+  font-size: large;
+} */
 
-.decorative{
+.decorative {
   margin-top: 6%;
   margin-left: 4%;
 }

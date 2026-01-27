@@ -16,6 +16,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-style: normal;
+    font-size: large;
     color: white;
     padding-right: 50px;
     padding-left: 50px;
@@ -58,4 +59,46 @@ h2{
 h1{
     font-size: 128px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+    margin-left: -90px;
+    margin-top: 90px;
+  }
+
+  .mm{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 0%;
+    margin-right: 0%;
+
+  }
+  h2{
+    font-size: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  .body-text {
+    font-size: medium;
+    width: 500px;
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+
+  .divider{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+
+  .erin{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+  }
 }

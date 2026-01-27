@@ -11,12 +11,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <nav>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/home"><Image src="/imgs/JM_white.png" alt="Logo" width={200} height={150} /></Link>
-          <Link href="/portfolio">Portfolio</Link>
-          <Link href="/services">Services</Link>
+        <nav className="site-nav">
+          <div className="nav-group nav-left">
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
+          </div>
+
+          <Link href="/home">
+            <Image
+              className="nav-logo"
+              src="/imgs/JM_white.png"
+              alt="Logo"
+              width={200}
+              height={150}
+            />
+          </Link>
+
+          <div className="nav-group nav-right">
+            <Link href="/portfolio">Portfolio</Link>
+            <Link href="/services">Services</Link>
+          </div>
         </nav>
         <br />
         <hr />

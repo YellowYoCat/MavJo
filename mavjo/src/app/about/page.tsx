@@ -10,7 +10,7 @@ const page = () => {
       </div>
 
       <div className='nav-links'>
-        <p className='sub'>Home</p> <p> About</p>
+        <p className='sub'>Home</p> <p className='subB'> About</p>
       </div>
       <p className='body-text'>
         Welcome to MavJo Designs! We are a creative agency dedicated to bringing your ideas to life through innovative design solutions. Our team of talented designers and developers work closely with clients to create stunning visuals and user-friendly experiences.
@@ -39,7 +39,7 @@ const page = () => {
           </Link>
         </div>
         <div>
-          <img src="/imgs/erin.jpg" alt="Madison Mitchell" width={500} height={500} />
+          <img src="/imgs/erin.jpg" className='erin' alt="Madison Mitchell" width={500} height={500} />
         </div>
       </div>
       <br></br>
@@ -47,7 +47,7 @@ const page = () => {
       <br></br>
       <div className='mm'>
         <div>
-          <img src="/imgs/johonna.png" alt="johanna johsoni" width={500} height={500} />
+          <img src="/imgs/johonna.png" className='erin' alt="johanna johson" width={500} height={500} />
         </div>
         <div>
           <h2> JOHOANNA JOHNSON</h2>
