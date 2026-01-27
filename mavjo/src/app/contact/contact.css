@@ -51,6 +51,44 @@ h2 {
     letter-spacing: 1px;
 }
 
+.contact-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-family: "Gajraj One", sans-serif;
+    font-size: 100px;
+    letter-spacing: 5px;
+    margin-bottom: 105px;
+}
+
+.decorative {
+    opacity: 100%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 0.85rem;
+}
+
+.nav-links p {
+    opacity: 0.6;
+}
+
+.nav-links .sub {
+    opacity: 0.9;
+}
+
+
 
 .page {
     min-height: 100vh;
@@ -60,6 +98,7 @@ h2 {
     justify-content: center;
     color: white;
     font-family: monospace;
+    flex-direction: column;
 }
 
 .contactWrapper {

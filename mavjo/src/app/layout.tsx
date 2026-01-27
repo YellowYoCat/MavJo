@@ -25,6 +25,14 @@ export default function RootLayout({
         <main className="main-content">
           {children}
 
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <Link href="/consultation" className="consultation-link">
             <div className="consultation-banner">
               <Image

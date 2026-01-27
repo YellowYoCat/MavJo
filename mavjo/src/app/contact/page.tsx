@@ -6,6 +6,24 @@ import Image from 'next/image'
 const page = () => {
   return (
     <main className="page">
+      <div className="contact-header">
+        <h1>CONTACT</h1>
+        <img
+          src="/imgs/decorative.jpg"
+          className="decorative"
+          alt="Decorative divider"
+          width={600}
+          height={50}
+        />
+      </div>
+
+      <div className="nav-links">
+        <p className="sub">Home</p>
+        <p>Contact</p>
+      </div>
+
+
+
       <div className="hudContainer">
 
         {/* Decorative HUD Images */}
