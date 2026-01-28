@@ -1,0 +1,180 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+label span {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+}
+
+input,
+textarea {
+    width: 95%;
+    background: white;
+    border: none;
+    border-radius: 999px;
+    padding: 0.75rem 1rem;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+textarea {
+    border-radius: 18px;
+    min-height: 120px;
+    resize: none;
+}
+
+button {
+    align-self: center;
+    margin-top: 0.5rem;
+    background: white;
+    color: black;
+    border: none;
+    padding: 0.45rem 1.25rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-family: "Gajraj One", sans-serif;
+    font-size: 100px;
+    letter-spacing: 5px;
+    margin-bottom: 105px;
+}
+
+.decorative {
+    opacity: 100%;
+    margin-bottom: 2%;
+    margin-left: 4%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 0.85rem;
+}
+
+.nav-links p {
+    opacity: 0.6;
+}
+
+.nav-links .sub {
+    opacity: 0.9;
+}
+
+
+
+.page {
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: monospace;
+    flex-direction: column;
+}
+
+.contactWrapper {
+    width: 500px;
+    padding: 35px;
+    /* border: 1px solid rgba(255, 255, 255, 0.35); */
+    position: relative;
+}
+
+
+/* .contactWrapper::before,
+.contactWrapper::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+} */
+
+.contactWrapper::before {
+    top: -10px;
+    left: -10px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.contactWrapper::after {
+    bottom: -10px;
+    right: -10px;
+    border-left: none;
+    border-top: none;
+}
+
+.hudContainer {
+    position: relative;
+    width: 520px;
+}
+
+/* HUD images */
+.hudTop {
+    position: absolute;
+    top: -80px;
+    left: 215px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.hudBottom {
+    position: absolute;
+    bottom: -70px;
+    left: 350px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.hudLeft {
+    height: 100%;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.hudRight {
+    position: absolute;
+    height: 100%;
+    right: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}

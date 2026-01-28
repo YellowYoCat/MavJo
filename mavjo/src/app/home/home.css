@@ -16,6 +16,35 @@ p{
   font-size: xX-large;
 }
 
+.logo-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  position: relative;
+  width: fit-content;
+}
+
+.landinglogo {
+  opacity: 0.35;
+}
+
+.logo-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
 
 .Web-banner {
     display: flex;

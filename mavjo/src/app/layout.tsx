@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import './globals.css'
+import ServicesDropdown from "./servicesDropdown";
 
 export default function RootLayout({
   children,
@@ -31,12 +32,21 @@ export default function RootLayout({
             <Link href="/portfolio">Portfolio</Link>
             <Link href="/services">Services</Link>
           </div>
+
         </nav>
         <br />
         <hr />
         <main className="main-content">
           {children}
 
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <Link href="/consultation" className="consultation-link">
             <div className="consultation-banner">
               <Image

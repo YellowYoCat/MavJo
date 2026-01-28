@@ -1,18 +1,29 @@
-.about{
+.about {
     margin-left: 150px;
     margin-right: 150px;
-    margin-top:-80px;
+    margin-top: -80px;
     font-family: "Gajraj One", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: white;
 }
 
-.about-header{
+.johanna {
+    width: 420px;
+    height: 500px;
+}
+
+.erin {
+    width: 450px;
+    height: 500px;
+}
+
+.about-header {
     display: flex;
     align-items: center;
 }
-.body-text{
+
+.body-text {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-style: normal;
@@ -22,27 +33,28 @@
     padding-left: 50px;
 }
 
-.divider{
+.divider {
     margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 10%;
 }
+
 .portfolio-banner {
-  position: relative;
-  margin: 20px 0;
-  top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    margin: 20px 0;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .consultation-link {
-  display: block;
-  text-decoration: none;
-  width: 100%;
+    display: block;
+    text-decoration: none;
+    width: 100%;
 }
 
-.mm{
+.mm {
     flex-direction: row;
     align-items: center;
     text-align: center;
@@ -51,12 +63,12 @@
     margin-right: 10%;
 }
 
-h2{
+h2 {
     font-size: 80px;
     margin: 20px;
 }
 
-h1{
+h1 {
     font-size: 128px;
     margin-bottom: 10px;
 }
