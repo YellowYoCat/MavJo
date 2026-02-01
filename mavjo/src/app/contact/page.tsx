@@ -28,7 +28,7 @@ const page = () => {
       <div className='contact-form'>
         <div className="hudContainer">
 
-          {/* Decorative HUD Images */}
+         
           <Image
             src="/imgs/topcorner.png"
             alt=""
@@ -62,7 +62,7 @@ const page = () => {
             className="hudRight"
           />
 
-          {/* Actual Form */}
+          
           <div className="contactWrapper">
             <h2>Contact Us</h2>
 
