@@ -5,7 +5,7 @@ import '../home/home.css'
 const SPage = () => {
   // Data for 3x3 grid items
   const gridItems = [
-    { id: 1, title: "Web Design", img: "/imgs/imgButton.jpg", href: "/services/webdev" },
+    { id: 1, title: "Web Design", img: "/imgs/imgButton.jpg", href: "/services/webdes" },
     { id: 2, title: "UI/UX Design", img: "/imgs/imgButton.jpg", href: '/services/uiuxdesign' },
     { id: 3, title: "Web Development", img: "/imgs/imgButton.jpg", href: '/services/webdev' },
     { id: 4, title: "Documentation", img: "/imgs/imgButton.jpg", href: '/services/doc' },
