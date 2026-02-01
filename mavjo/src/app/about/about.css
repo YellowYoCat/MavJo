@@ -1,116 +1,258 @@
-.about {
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: -80px;
-    font-family: "Gajraj One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
+:root {
+  --hud-blue: #4fd1ff;
+  --hud-blue-soft: rgba(79, 209, 255, 0.4);
+  --hud-line: rgba(255, 255, 255, 0.35);
 }
 
-.johanna {
-    width: 420px;
-    height: 500px;
-}
-
-.erin {
-    width: 450px;
-    height: 500px;
-}
-
-.about-header {
-    display: flex;
+.contactForm, .contact-header, .nav-links, .socialsSection, .contactWrapper {
+    text-align: center;
+    flex-direction: column;
     align-items: center;
+    display: flex;
 }
 
-.body-text {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-style: normal;
-    font-size: large;
-    color: white;
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-.divider {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 10%;
-}
-
-.portfolio-banner {
-    position: relative;
-    margin: 20px 0;
-    top: 10px;
+/* Nav Links - RIGHT AFTER HEADER */
+.nav-links {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 40px;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    position: relative;
+    padding: 20px 0;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+    max-width: 600px;
+    width: 90%;
+    flex-wrap: wrap;
 }
 
-.consultation-link {
-    display: block;
-    text-decoration: none;
+.nav-links p {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.nav-links p:hover {
+    opacity: 1;
+    color: rgba(0, 255, 255, 0.9);
+    transform: translateY(-2px);
+}
+
+.nav-links p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.8), transparent);
+    transition: width 0.3s ease;
+}
+
+.nav-links p:hover::after {
     width: 100%;
 }
 
-.mm {
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+.nav-links .sub {
+    opacity: 0.9;
+    color: rgba(0, 255, 255, 0.9);
+    font-weight: bold;
 }
 
+.about {
+  margin: 0 150px;
+  margin-top: -80px;
+  font-family: "Gajraj One", sans-serif;
+  color: #fff;
+  position: relative;
+  letter-spacing: 0.08em;
+}
+
+/* top scanning line */
+.about::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--hud-blue),
+    transparent
+  );
+  opacity: 0.6;
+}
+
+/* IMAGES (FULL COLOR) */
+.johanna,
+.erin {
+  object-fit: cover;
+  border: 1px solid var(--hud-blue-soft);
+  box-shadow: 0 0 20px rgba(79, 209, 255, 0.15);
+}
+
+.johanna {
+  width: 420px;
+  height: 500px;
+}
+
+.erin {
+  width: 450px;
+  height: 500px;
+}
+
+/* HEADER */
+.about-header {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 60px 20px 30px;
+    display: flex;
+    position: relative;
+}
+
+/* BODY TEXT HUD PANEL */
+.body-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.85);
+  padding: 40px 50px;
+  position: relative;
+  border: 1px solid var(--hud-blue-soft);
+}
+
+/* corner brackets */
+.body-text::before,
+.body-text::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--hud-blue);
+}
+
+.body-text::before {
+  top: -2px;
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.body-text::after {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}
+
+/* HUD DIVIDER */
+.divider {
+  margin: 60px auto;
+  width: 80%;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--hud-blue),
+    var(--hud-blue) 18px,
+    transparent 18px,
+    transparent 36px
+  );
+  opacity: 0.7;
+}
+
+/* BANNER */
+.portfolio-banner {
+  position: relative;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LINK */
+.consultation-link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+/* MAIN MODULE */
+.mm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10%;
+  gap: 60px;
+}
+
+/* HEADINGS */
+h1,
 h2 {
-    font-size: 80px;
-    margin: 20px;
+  text-transform: uppercase;
 }
 
 h1 {
-    font-size: 128px;
-    margin-bottom: 10px;
+  font-size: 120px;
+  margin-bottom: 10px;
+  letter-spacing: 0.12em;
+  color: var(--hud-blue);
+  text-shadow: 0 0 12px rgba(79, 209, 255, 0.4);
 }
 
+h2 {
+  font-size: 64px;
+  margin: 20px 0;
+  opacity: 0.9;
+}
+
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
+
+  .about {
+    margin: 0 30px;
+  }
+
   h1 {
-    font-size: 4rem;
-    margin-left: -90px;
-    margin-top: 90px;
+    font-size: 56px;
+    margin: 40px 0;
   }
 
-  .mm{
+  h2 {
+    font-size: 32px;
+    padding: 0 40px;
+  }
+
+  .mm {
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    display: flex;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin: 0;
+  }
 
-  }
-  h2{
-    font-size: 40px;
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-  
   .body-text {
-    font-size: medium;
-    width: 500px;
-    padding-right: 90px;
-    padding-left: 90px;
+    font-size: 13px;
+    padding: 30px;
   }
 
-  .divider{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 0px;
+  .divider {
+    width: 100%;
   }
 
-  .erin{
-    width: 300px;
-    height: 300px;
-    margin-top: 20px;
+  .erin,
+  .johanna {
+    width: 280px;
+    height: 320px;
+    margin-top: 30px;
   }
 }
+
