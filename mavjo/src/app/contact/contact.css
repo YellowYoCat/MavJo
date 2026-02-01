@@ -141,9 +141,10 @@ h2 {
     width: 520px;
 }
 
-.contact-form{
+.contact-form {
     padding-top: 150px;
-    
+    display: contents;
+
 }
 
 /* HUD images */
@@ -186,4 +187,43 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+}
+
+
+/* app/components/Socials.module.css */
+
+.socialsSection {
+    background: black;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    padding-top: 150px;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 2.5rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.circle {
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #e6e6e6;
+    border-radius: 50%;
+    /* transition: transform 0.2s ease, background 0.2s ease; */
+    cursor: pointer;
+}
+
+.circle:hover {
+    transform: scale(1.08);
+    background: #ffffff;
 }

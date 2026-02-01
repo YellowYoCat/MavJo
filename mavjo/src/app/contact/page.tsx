@@ -100,6 +100,19 @@ const page = () => {
           </div>
 
         </div>
+
+        <section className="socialsSection">
+      <h2 className="title">SOCIALS</h2>
+
+      <div className="icons">
+        <Link href="#"><span className="circle"></span></Link>
+        <Link href="#"><span className="circle"></span></Link>
+        <Link href="#"><span className="circle"></span></Link>
+        <Link href="#"><span className="circle"></span></Link>
+        <Link href="#"><span className="circle"></span></Link>
+        <Link href="#"><span className="circle"></span></Link>
+      </div>
+    </section>
       </div>
     </main>
   )
