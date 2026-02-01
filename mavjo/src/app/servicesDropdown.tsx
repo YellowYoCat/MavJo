@@ -9,7 +9,7 @@ export default function ServicesDropdown() {
   const [isOpen, setIsOpen] = useState(false);
 
   const services = [
-    { name: 'Web Design', href: '/services/web-design' },
+    { name: 'Web Design', href: '/services/webdes' },
     { name: 'UI/UX Design', href: '/services/uiuxdesign' },
     { name: 'Web Development', href: '/services/webdev' },
     { name: 'Documentation', href: '/services/doc' },
