@@ -9,20 +9,13 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
-/* SERVICES DROPDOWN WRAPPER */
 .services-dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* TRIGGER LINK */
+
 .services-trigger {
   display: flex;
   align-items: center;
@@ -30,7 +23,7 @@
   cursor: pointer;
 }
 
-/* DROPDOWN MENU */
+
 .dropdown-menu {
   position: absolute;
   top: 130%;
@@ -52,7 +45,7 @@
   z-index: 1000;
 }
 
-/* INDIVIDUAL ITEMS */
+
 .dropdown-item {
   display: flex;
   align-items: center;
@@ -97,7 +90,7 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 80px;
-  /* Footer height */
+
 }
 
 .site-nav {
@@ -322,12 +315,6 @@ footer {
   font-size: large;
 }
 
-/* .nav-links{
-  display: flex;
-  gap: 20px;
-  margin-top: -30px;
-  font-size: large;
-} */
 
 .decorative {
   margin-top: 6%;

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import './home.css';
+import '../home/home.css'
 
 const SPage = () => {
   // Data for 3x3 grid items

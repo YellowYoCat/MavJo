@@ -1,5 +1,5 @@
 import React from 'react'
-import './about.css'
+import '../about/about.css'
 import Link from 'next/dist/client/link'
 const page = () => {
   return (

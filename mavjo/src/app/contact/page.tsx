@@ -1,5 +1,5 @@
 import React from 'react'
-import './contact.css'
+import '../contact/contact.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
