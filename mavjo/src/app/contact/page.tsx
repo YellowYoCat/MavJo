@@ -21,6 +21,13 @@ const page = () => {
         <p className="sub">Home</p>
         <p>Contact</p>
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
 
 
 
