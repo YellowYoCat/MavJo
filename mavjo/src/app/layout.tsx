@@ -30,7 +30,8 @@ export default function RootLayout({
 
           <div className="nav-group nav-right">
             <Link href="/portfolio">Portfolio</Link>
-            <Link href="/services">Services</Link>
+            <ServicesDropdown/>
+            {/* <Link href="/services">Services</Link> */}
           </div>
 
         </nav>
