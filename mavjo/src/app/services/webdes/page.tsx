@@ -25,9 +25,10 @@ const page = () => {
       <section className="offer">
         <h3>WHAT WE OFFER</h3>
         <p>
-          In today’s digital-first world, user experience can make or break a product.
-          That’s why at Wake Creative, we focus on creating intuitive, visually appealing
-          designs that resonate with your audience and drive engagement.
+          We design visually engaging, user-centered websites that balance
+          aesthetics with usability to create seamless digital experiences.
+          Every site is thoughtfully crafted to be responsive, accessible,
+          and aligned with your brand’s goals.
         </p>
       </section>
 
@@ -35,9 +36,12 @@ const page = () => {
       <section className="why">
         <h3>WHY US</h3>
         <p>
-          In today’s digital-first world, user experience can make or break a product.
-          That’s why at Wake Creative, we focus on creating intuitive, visually appealing
-          designs that resonate with your audience and drive engagement.
+          We combine thoughtful UX design with clean,
+          modern development to create experiences that
+          feel intuitive and engaging. Our collaborative
+          process ensures your goals stay at the center,
+          resulting in solutions that are both visually
+          compelling and purpose-driven.
         </p>
       </section>
 
@@ -53,20 +57,20 @@ const page = () => {
           <div className="arrow">››››</div>
 
           <div className="step">
-            <span>Start Coding</span>
+            <span>Plan & strategize</span>
           </div>
 
           <div className="arrow">››››</div>
 
           <div className="step">
-            <span>Deploy your new site</span>
+            <span>Design the experience</span>
           </div>
         </div>
 
         <div className="timeline sub">
-          <div className="step">Wireframe & Mockups</div>
+          <div className="step">Discover & research</div>
           <div className="arrow">››››</div>
-          <div className="step">85% done – See if the client wants to change anything</div>
+          <div className="step">Develop & test</div>
         </div>
       </section>
 
@@ -76,17 +80,33 @@ const page = () => {
 
         <div className="project-grid">
           <div className="project-card large">
-            <div className="wireframe" />
+            <div
+              className="wireframe"
+              style={{
+                backgroundImage: "url('/imgs/figma1.png')",
+                width: "100%",
+                height: "220px"
+              }}
+            />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
 
           <div className="project-card">
-            <div className="wireframe" />
+            <div
+              className="wireframe"
+              style={{ backgroundImage: "url('/imgs/figma2.png')",
+                 width: "100%",
+                height: "50pxpx"
+               }}
+            />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
 
           <div className="project-card">
-            <div className="wireframe" />
+            <div
+              className="wireframe"
+              style={{ backgroundImage: "url('/imgs/figma3.png')" }}
+            />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
