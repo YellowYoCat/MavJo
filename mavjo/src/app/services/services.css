@@ -259,8 +259,8 @@ h1, h2, h3 {
 }
 
 .timeline.sub {
-  margin-top: 60px;
-  opacity: 0.7;
+  /* margin-top: 60px;
+  opacity: 0.7; */
   filter: blur(0.5px);
 }
 
@@ -295,6 +295,13 @@ h1, h2, h3 {
   transition: all 0.4s ease;
   text-align: left;
   overflow: hidden;
+}
+
+.project-image-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
 }
 
 .project-card:hover {
