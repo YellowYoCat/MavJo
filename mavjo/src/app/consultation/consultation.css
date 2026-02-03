@@ -1,0 +1,17 @@
+.nameFields{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contactFields{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.additionalFields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

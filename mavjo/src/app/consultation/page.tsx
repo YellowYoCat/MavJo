@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import './consultation.css'
 
 const page = () => {
   return (
@@ -23,77 +24,57 @@ const page = () => {
         <div className='contact-form'>
           <div className="hudContainer">
 
-
-            <Image
-              src="/imgs/topcorner.png"
-              alt=""
-              width={500}
-              height={60}
-              className="hudTop"
-              priority
-            />
-
-            <Image
-              src="/imgs/line.png"
-              alt=""
-              width={500}
-              height={60}
-              className="hudBottom"
-            />
-
-            <Image
-              src="/imgs/rightline.png"
-              alt=""
-              width={60}
-              height={400}
-              className="hudLeft"
-            />
-
-            <Image
-              src="/imgs/leftline.png"
-              alt=""
-              width={60}
-              height={400}
-              className="hudRight"
-            />
-
-
             <div className="consultationWrapper">
               <h2>Start the Conversation!</h2>
 
               <form className="consultationForm">
-                <div>
+                <div className="nameFields">
                   <label>
                     <span>First Name*</span>
+                    <br></br>
                     <input type="text" />
                   </label>
 
                   <label>
                     <span>Last Name*</span>
+                    <br></br>
                     <input type="text" />
                   </label>
                 </div>
 
+                <div className='contactFields'>
+                  <label>
+                    <span>Email*</span>
+                    <br></br>
+                    <input type="email" />
+                  </label>
 
-                <label>
-                  <span>Email*</span>
-                  <input type="email" />
-                </label>
+                  <label>
+                    <span>Phone Number*</span>
+                    <br></br>
+                    <input type="tel" />
+                  </label>
 
-                <label>
-                  <span>Phone Number*</span>
-                  <input type="tel" />
-                </label>
+                </div>
 
-                <label>
-                  <span>What are you interested in?</span>
-                  <input type="text" />
-                </label>
+                <div className='additionalFields'>
+                  <label>
+                    {/* this is a dropdown of our services*/}
+                    <span>What are you interested in?</span>
+                    <br></br>
+                    <input type="text" />
+                  </label>
 
-                <label>
-                  <span>Tell Us More About It!</span>
-                  <textarea rows={4} />
-                </label>
+                  <label>
+                    <span>Tell Us More About It!</span>
+                    <br></br>
+                    <textarea rows={4} />
+                  </label>
+
+                </div>
+
+
+                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0zBgXv_F1YCRfKCHdwva8eRne4T3t0nXFAGGaAkjTBaZpLpeyA8fbKeUIY42hqp-8n_1BpL1Fh?gv=true" width="100%" height="600" ></iframe>
 
                 <Link href="" className="consultation-link">
                   <div className="consultation-banner">
@@ -109,10 +90,6 @@ const page = () => {
                     </div>
                   </div>
                 </Link>
-
-
-                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0zBgXv_F1YCRfKCHdwva8eRne4T3t0nXFAGGaAkjTBaZpLpeyA8fbKeUIY42hqp-8n_1BpL1Fh?gv=true"  width="100%" height="600" ></iframe>
-
               </form>
             </div>
 
