@@ -1,4 +1,3 @@
-/* Consultation Page Styles */
 .consultation {
     min-height: 100vh;
     background: #000;
@@ -106,7 +105,6 @@
     z-index: -1;
 }
 
-/* Nav Links - Matching previous styling */
 .nav-links {
     display: flex;
     justify-content: center;
@@ -161,7 +159,6 @@
     font-weight: bold;
 }
 
-/* Header Text */
 .body-text {
     font-family: "Gajraj One", sans-serif;
     font-size: 2.5rem;
@@ -174,7 +171,6 @@
     line-height: 1.4;
 }
 
-/* Consultation Body */
 .consultation-body {
     width: 100%;
     max-width: 1000px;
@@ -192,7 +188,6 @@
     margin: 0 auto;
 }
 
-/* Consultation Wrapper */
 .consultationWrapper {
     width: 100%;
     padding: 40px 30px;
@@ -258,7 +253,7 @@
     background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.8), transparent);
 }
 
-/* Consultation Form */
+
 .consultationForm {
     display: flex;
     flex-direction: column;
@@ -266,7 +261,6 @@
     width: 100%;
 }
 
-/* Form Field Groups */
 .nameFields,
 .contactFields,
 .additionalFields {
@@ -286,7 +280,6 @@
     }
 }
 
-/* Form Labels */
 .consultationForm label {
     position: relative;
     display: block;
@@ -305,7 +298,6 @@
     text-align: left;
 }
 
-/* Form Inputs */
 .consultationForm input,
 .consultationForm textarea {
     width: 100%;
@@ -342,7 +334,7 @@
     background: rgba(15, 20, 30, 0.8);
 }
 
-/* Calendar Iframe */
+
 .consultationForm iframe {
     width: 100%;
     border: 1px solid rgba(0, 255, 255, 0.2);
@@ -352,113 +344,6 @@
     backdrop-filter: blur(10px);
 }
 
-/* Consultation Banner Button */
-/* .consultation-link {
-    display: block;
-    text-decoration: none;
-    width: 100%;
-    max-width: 300px;
-    margin: 2rem auto 0;
-} */
-
-/* .consultation-banner {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    border: 2px solid rgba(0, 255, 255, 0.3);
-    border-radius: 12px;
-    overflow: hidden;
-    background: rgba(20, 25, 35, 0.6);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    transition: all 0.4s ease;
-}
-
-.consultation-banner::before,
-.consultation-banner::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2px solid rgba(0, 255, 255, 0.6);
-    z-index: 2;
-}
-
-.consultation-banner::before {
-    top: -2px;
-    left: -2px;
-    border-right: none;
-    border-bottom: none;
-} */
-/* 
-.consultation-banner::after {
-    bottom: -2px;
-    right: -2px;
-    border-left: none;
-    border-top: none;
-}
-
-.consultation-banner:hover {
-    border-color: rgba(0, 255, 255, 0.8);
-    transform: translateY(-5px);
-    box-shadow: 
-        0 20px 40px rgba(0, 255, 255, 0.2),
-        0 0 30px rgba(0, 255, 255, 0.1);
-} */
-
-/* .banner-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    filter: brightness(0.9) contrast(1.1);
-    transition: transform 0.4s ease;
-}
-
-.consultation-banner:hover .banner-image {
-    transform: scale(1.05);
-} */
-
-/* .banner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(
-        circle at center,
-        transparent 30%,
-        rgba(0, 0, 0, 0.6) 100%
-    );
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .banner-text {
-    position: absolute;
-    font-family: "Gajraj One", sans-serif;
-    font-size: 2.5rem;
-    color: white;
-    text-shadow: 
-        0 0 10px rgba(0, 255, 255, 0.8),
-        0 0 20px rgba(0, 0, 0, 0.8),
-        2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 3;
-    text-align: center;
-    letter-spacing: 0.1em;
-    background: linear-gradient(90deg, #fff, rgba(0, 255, 255, 0.9));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-} */
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .caonsultation-header h1 {
         font-size: 50px;
@@ -542,7 +427,6 @@
     }
 }
 
-/* Center alignment for all text */
 .consultation,
 .caonsultation-header,
 .nav-links,
@@ -551,7 +435,7 @@
     text-align: center;
 }
 
-/* Ensure everything is centered */
+
 .consultation>* {
     display: flex;
     flex-direction: column;
@@ -559,7 +443,7 @@
     width: 100%;
 }
 
-/* Custom scrollbar */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
