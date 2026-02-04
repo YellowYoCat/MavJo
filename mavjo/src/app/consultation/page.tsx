@@ -74,7 +74,16 @@ const page = () => {
                 </div>
 
 
-                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0zBgXv_F1YCRfKCHdwva8eRne4T3t0nXFAGGaAkjTBaZpLpeyA8fbKeUIY42hqp-8n_1BpL1Fh?gv=true" width="100%" height="600" ></iframe>
+                {/* <iframe className='google' src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0zBgXv_F1YCRfKCHdwva8eRne4T3t0nXFAGGaAkjTBaZpLpeyA8fbKeUIY42hqp-8n_1BpL1Fh?gv=true" width="100%" height="600"></iframe> */}
+
+                <div className="dark-iframe-wrapper">
+                  <iframe
+                    className='google'
+                    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0zBgXv_F1YCRfKCHdwva8eRne4T3t0nXFAGGaAkjTBaZpLpeyA8fbKeUIY42hqp-8n_1BpL1Fh?gv=true"
+                    width="100%"
+                    height="600"
+                  ></iframe>
+                </div>
 
                 <Link href="" className="consultation-link">
                   <div className="consultation-banner">
