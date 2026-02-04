@@ -73,20 +73,24 @@ const page = () => {
           <div className="contactWrapper">
             <h2>Contact Us</h2>
 
-            <form className="contactForm">
-              <label>
+            <form action="mailto: mavjo147@gmail.com" 
+                  method="post" 
+                  encType="text/plain"
+                  name='EmailForm'
+                  className="contactForm">
+              <label htmlFor="name">
                 <span>Name</span>
-                <input type="text" />
+                <input type="text" id="name" name='name' />
               </label>
 
-              <label>
+              <label htmlFor='email'>
                 <span>Email</span>
-                <input type="email" />
+                <input type="email" id="email" name='email' />
               </label>
 
-              <label>
+              <label htmlFor='message'>
                 <span>Message</span>
-                <textarea />
+                <textarea id="message" name='message' />
               </label>
 
               <Link href="" className="consultation-link">

@@ -11,17 +11,58 @@
     overflow-x: hidden;
 }
 
-.google{
-    background-color: #000 !important;
-    color: white !important;
+@media (prefers-color-scheme: dark) {
+  .google {
+    filter: invert(1) hue-rotate(180deg) contrast(1.05) brightness(1.05);
+  }
 }
 
+.consultationForm iframe {
+  background: white !important;
+  backdrop-filter: none !important;
+}
 .dark-iframe-wrapper {
-  background-color: #1a1a1a;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 12px;
+    background: rgba(15, 20, 30, 0.7);
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1px solid rgba(0, 255, 255, 0.25);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.6),
+        inset 0 0 25px rgba(0, 255, 255, 0.05);
 }
 
 .dark-iframe-wrapper iframe {
-  border: none;
+    width: 100%;
+    height: 650px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+}
+
+.dark-iframe-wrapper::before,
+.dark-iframe-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(0, 255, 255, 0.6);
+}
+
+.dark-iframe-wrapper::before {
+    top: -2px;
+    left: -2px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.dark-iframe-wrapper::after {
+    bottom: -2px;
+    right: -2px;
+    border-left: none;
+    border-top: none;
 }
 
 .consultation::before {
@@ -278,6 +319,10 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+
+  .dark-iframe-wrapper iframe {
+    height: 450px;
+  }
 }
 
 .consultationForm label {
