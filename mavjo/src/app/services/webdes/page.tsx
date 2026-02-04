@@ -10,15 +10,7 @@ const page = () => {
         <h1>WEB DESIGN</h1>
         <p className="breadcrumbs">Services / Service Details</p>
 
-        <div className="hero-frame">
-          <h2>TRANSFORMING IDEAS INTO EXCEPTIONAL USER EXPERIENCES</h2>
-          <p>
-            In today’s digital-first world, user experience can make or break a product.
-            That’s why at Wake Creative, we focus on creating intuitive, visually appealing
-            designs that resonate with your audience and drive engagement.
-          </p>
-          <span className="needs">THIS NEEDS TO BE CHANGED</span>
-        </div>
+        
       </section>
 
       {/* WHAT WE OFFER */}

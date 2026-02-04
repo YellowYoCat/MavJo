@@ -7,27 +7,21 @@ const page = () => {
 
       {/* HERO */}
       <section className="hero">
-        <h1>WEB DESIGN</h1>
+        <h1>WEB DEVELOPMENT</h1>
         <p className="breadcrumbs">Services / Service Details</p>
 
-        <div className="hero-frame">
-          <h2>TRANSFORMING IDEAS INTO EXCEPTIONAL USER EXPERIENCES</h2>
-          <p>
-            In today’s digital-first world, user experience can make or break a product.
-            That’s why at Wake Creative, we focus on creating intuitive, visually appealing
-            designs that resonate with your audience and drive engagement.
-          </p>
-          <span className="needs">THIS NEEDS TO BE CHANGED</span>
-        </div>
+       
       </section>
 
       {/* WHAT WE OFFER */}
       <section className="offer">
         <h3>WHAT WE OFFER</h3>
         <p>
-          In today’s digital-first world, user experience can make or break a product.
-          That’s why at Wake Creative, we focus on creating intuitive, visually appealing
-          designs that resonate with your audience and drive engagement.
+          We build fast, reliable, and scalable websites using
+          modern technologies to ensure strong performance across all devices.
+          From clean front-end interfaces to solid back-end
+          functionality, our development focuses on speed, security,
+          and maintainability.
         </p>
       </section>
 
@@ -35,9 +29,11 @@ const page = () => {
       <section className="why">
         <h3>WHY US</h3>
         <p>
-          In today’s digital-first world, user experience can make or break a product.
-          That’s why at Wake Creative, we focus on creating intuitive, visually appealing
-          designs that resonate with your audience and drive engagement.
+          We build fast, reliable, and scalable websites using
+          modern technologies to ensure strong performance across
+          all devices. From clean front-end interfaces to solid
+          back-end functionality, our development focuses on
+          speed, security, and maintainability.
         </p>
       </section>
 
@@ -47,26 +43,26 @@ const page = () => {
 
         <div className="timeline">
           <div className="step">
-            <span>Talking with the client</span>
+            <span>Requirements gathering</span>
           </div>
 
           <div className="arrow">››››</div>
 
           <div className="step">
-            <span>Start Coding</span>
+            <span>Development</span>
           </div>
 
           <div className="arrow">››››</div>
 
           <div className="step">
-            <span>Deploy your new site</span>
+            <span>Deployment & support</span>
           </div>
         </div>
 
         <div className="timeline sub">
-          <div className="step">Wireframe & Mockups</div>
+          <div className="step">Technical planning</div>
           <div className="arrow">››››</div>
-          <div className="step">85% done – See if the client wants to change anything</div>
+          <div className="step">Testing & optimization</div>
         </div>
       </section>
 
@@ -76,17 +72,36 @@ const page = () => {
 
         <div className="project-grid">
           <div className="project-card large">
-            <div className="wireframe" />
+            <div
+              className="wireframe"
+              style={{
+                // backgroundImage: "url('/imgs/figma1.png')",
+                width: "100%",
+                height: "220px"
+              }}
+            />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
 
           <div className="project-card">
-            <div className="wireframe" />
+            <div
+              className="wireframe"
+              style={{
+                // backgroundImage: "url('/imgs/figma2.png')",
+                width: "100%",
+                height: "50pxpx"
+              }}
+            />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
 
           <div className="project-card">
-            <div className="wireframe" />
+            <div
+              className="wireframe"
+              style={{
+                // backgroundImage: "url('/imgs/figma3.png')" 
+              }}
+            />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>

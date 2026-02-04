@@ -10,24 +10,16 @@ const page = () => {
         <h1>WEB DESIGN</h1>
         <p className="breadcrumbs">Services / Service Details</p>
 
-        <div className="hero-frame">
-          <h2>TRANSFORMING IDEAS INTO EXCEPTIONAL USER EXPERIENCES</h2>
-          <p>
-            In today’s digital-first world, user experience can make or break a product.
-            That’s why at Wake Creative, we focus on creating intuitive, visually appealing
-            designs that resonate with your audience and drive engagement.
-          </p>
-          <span className="needs">THIS NEEDS TO BE CHANGED</span>
-        </div>
+
       </section>
 
       {/* WHAT WE OFFER */}
       <section className="offer">
         <h3>WHAT WE OFFER</h3>
         <p>
-          In today’s digital-first world, user experience can make or break a product.
-          That’s why at Wake Creative, we focus on creating intuitive, visually appealing
-          designs that resonate with your audience and drive engagement.
+          We refresh and modernize existing websites to improve usability,
+          performance, and visual appeal. Our redesigns focus on enhancing user
+          experience while aligning your site with current branding and business goals.
         </p>
       </section>
 
@@ -35,9 +27,10 @@ const page = () => {
       <section className="why">
         <h3>WHY US</h3>
         <p>
-          In today’s digital-first world, user experience can make or break a product.
-          That’s why at Wake Creative, we focus on creating intuitive, visually appealing
-          designs that resonate with your audience and drive engagement.
+          We bring fresh ideas and expert insights to transform your site
+          without losing what makes your brand
+          unique. Our collaborative process ensures the redesign meets both
+          user needs and your business objectives.
         </p>
       </section>
 
@@ -47,26 +40,26 @@ const page = () => {
 
         <div className="timeline">
           <div className="step">
-            <span>Talking with the client</span>
+            <span>Site analysis</span>
           </div>
 
           <div className="arrow">››››</div>
 
           <div className="step">
-            <span>Start Coding</span>
+            <span>Design update</span>
           </div>
 
           <div className="arrow">››››</div>
 
           <div className="step">
-            <span>Deploy your new site</span>
+            <span>Testing & launch</span>
           </div>
         </div>
 
         <div className="timeline sub">
-          <div className="step">Wireframe & Mockups</div>
+          <div className="step">Strategy development</div>
           <div className="arrow">››››</div>
-          <div className="step">85% done – See if the client wants to change anything</div>
+          <div className="step">Implementation</div>
         </div>
       </section>
 
@@ -76,17 +69,36 @@ const page = () => {
 
         <div className="project-grid">
           <div className="project-card large">
-            <div className="wireframe" />
+            <div
+              className="wireframe"
+              style={{
+                // backgroundImage: "url('/imgs/figma1.png')",
+                width: "100%",
+                height: "220px"
+              }}
+            />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
 
           <div className="project-card">
-            <div className="wireframe" />
+            <div
+              className="wireframe"
+              style={{
+                // backgroundImage: "url('/imgs/figma2.png')",
+                width: "100%",
+                height: "50pxpx"
+              }}
+            />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
 
           <div className="project-card">
-            <div className="wireframe" />
+            <div
+              className="wireframe"
+              style={{
+                // backgroundImage: "url('/imgs/figma3.png')" 
+              }}
+            />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
