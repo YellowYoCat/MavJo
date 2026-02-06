@@ -72,7 +72,7 @@ const page = () => {
             <div
               className="wireframe"
               style={{
-                // backgroundImage: "url('/imgs/figma1.png')",
+                backgroundImage: "url('/imgs/traxMain.png')",
                 width: "100%",
                 height: "220px"
               }}
@@ -84,7 +84,7 @@ const page = () => {
             <div
               className="wireframe"
               style={{
-                // backgroundImage: "url('/imgs/figma2.png')",
+                backgroundImage: "url('/imgs/traxOther.png')",
                 width: "100%",
                 height: "50pxpx"
               }}
@@ -96,7 +96,7 @@ const page = () => {
             <div
               className="wireframe"
               style={{
-                // backgroundImage: "url('/imgs/figma3.png')" 
+                backgroundImage: "url('/imgs/traxTrain.png')" 
               }}
             />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
