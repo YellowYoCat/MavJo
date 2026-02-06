@@ -13,8 +13,8 @@ export default function ServicesDropdown() {
     { name: 'UI/UX Design', href: '/services/uiuxdesign' },
     { name: 'Web Development', href: '/services/webdev' },
     { name: 'Documentation', href: '/services/doc' },
-    { name: 'Graphic Design', href: '/services/graphicdesign' },
-    { name: 'Website Redesigns', href: '/services/websiteredesign' },
+    { name: 'Graphic Design', href: '/services/graphicdes' },
+    { name: 'Website Redesigns', href: '/services/redesigns' },
     { name: 'Small Business Websites', href: '/services/smallbusiness'},
     { name: 'Marketing',  href: '/services/marketing' },
     { name: 'SEO Basics', href: '/services/seobasics' }

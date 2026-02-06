@@ -9,8 +9,8 @@ const SPage = () => {
     { id: 2, title: "UI/UX Design", img: "/imgs/imgButton.jpg", href: '/services/uiuxdesign' },
     { id: 3, title: "Web Development", img: "/imgs/imgButton.jpg", href: '/services/webdev' },
     { id: 4, title: "Documentation", img: "/imgs/imgButton.jpg", href: '/services/doc' },
-    { id: 5, title: "Graphic Design", img: "/imgs/imgButton.jpg", href: '/services/graphicdesign' },
-    { id: 6, title: "Website Redesigns", img: "/imgs/imgButton.jpg", href: '/services/websiteredesign' },
+    { id: 5, title: "Graphic Design", img: "/imgs/imgButton.jpg", href: '/services/graphicdes' },
+    { id: 6, title: "Website Redesigns", img: "/imgs/imgButton.jpg", href: '/services/redesigns' },
     { id: 7, title: "Small Business Websites", img: "/imgs/imgButton.jpg", href: '/services/smallbusiness' },
     { id: 8, title: "Marketing", img: "/imgs/imgButton.jpg", href: '/services/marketing' },
     { id: 9, title: "SEO Basics", img: "/imgs/imgButton.jpg", href: '/services/seobasics' }

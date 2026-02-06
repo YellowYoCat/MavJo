@@ -7,7 +7,7 @@ const page = () => {
 
       {/* HERO */}
       <section className="hero">
-        <h1>WEB DESIGN</h1>
+        <h1>WEB REDESIGN</h1>
         <p className="breadcrumbs">Services / Service Details</p>
 
 
@@ -72,9 +72,10 @@ const page = () => {
             <div
               className="wireframe"
               style={{
-                backgroundImage: "url('/imgs/traxMain.png')",
-                width: "100%",
-                height: "220px"
+                backgroundImage: "url('/imgs/redesign/traxMain.png')",
+                // width: "100%",
+                // height: "220px",
+                backgroundSize: "cover"
               }}
             />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -86,7 +87,8 @@ const page = () => {
               style={{
                 backgroundImage: "url('/imgs/traxOther.png')",
                 width: "100%",
-                height: "50pxpx"
+                height: "50px",
+                backgroundSize: "cover"
               }}
             />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
