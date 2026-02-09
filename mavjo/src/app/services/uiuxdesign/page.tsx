@@ -10,7 +10,7 @@ const page = () => {
         <h1>UI/UX DESIGN</h1>
         <p className="breadcrumbs">Services / Service Details</p>
 
-        
+
       </section>
 
       {/* WHAT WE OFFER */}
@@ -72,34 +72,37 @@ const page = () => {
             <div
               className="wireframe"
               style={{
-                // backgroundImage: "url('/imgs/figma1.png')",
+                backgroundImage: "url('/imgs/UI/characterCove.png')", 
                 width: "100%",
-                height: "220px"
+                height: "220px",
+                backgroundSize: "cover"
               }}
             />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Where you can make your own Character otherwise known as OC's.</p>
           </div>
 
           <div className="project-card">
             <div
               className="wireframe"
               style={{
-                // backgroundImage: "url('/imgs/figma2.png')",
+                backgroundImage: "url('/imgs/UI/SNWBig.png')",
                 width: "100%",
-                height: "50pxpx"
+                height: "200px",
+                backgroundSize: "cover"
               }}
             />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Desktop version of Super nom Wranger a search map engine to find mom and pop restaurants </p>
           </div>
 
           <div className="project-card">
             <div
               className="wireframe"
               style={{
-                // backgroundImage: "url('/imgs/figma3.png')" 
+                backgroundImage: "url('/imgs/UI/SNWsmall.png')",
+                backgroundSize: "cover"
               }}
             />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>tablet version of Super nom Wranger a search map engine to find mom and pop restaurants</p>
           </div>
         </div>
       </section>
