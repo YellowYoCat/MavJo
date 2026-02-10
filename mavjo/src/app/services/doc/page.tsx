@@ -7,7 +7,7 @@ const page = () => {
 
      
       <section className="hero">
-        <h1>WEB DESIGN</h1>
+        <h1>DOCUMENTATION</h1>
         <p className="breadcrumbs">Services / Service Details</p>
 
         

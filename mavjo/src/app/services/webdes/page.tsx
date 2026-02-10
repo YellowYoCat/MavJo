@@ -10,7 +10,7 @@ const page = () => {
         <h1>WEB DESIGN</h1>
         <p className="breadcrumbs">Services / Service Details</p>
 
-        
+
       </section>
 
       {/* WHAT WE OFFER */}
@@ -77,29 +77,37 @@ const page = () => {
               style={{
                 backgroundImage: "url('/imgs/figma1.png')",
                 width: "100%",
-                height: "220px"
+                height: "220px",
+                backgroundSize: "cover"
               }}
             />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Our own site what your looking at right now!</p>
           </div>
 
           <div className="project-card">
             <div
               className="wireframe"
-              style={{ backgroundImage: "url('/imgs/figma2.png')",
-                 width: "100%",
-                height: "50pxpx"
-               }}
+              style={{
+                backgroundImage: "url('/imgs/figma2.png')",
+                width: "100%",
+                height: "220px",
+                backgroundSize: "cover"
+              }}
             />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Design of a map search for a mom & pop restaurants around your area. </p>
           </div>
 
           <div className="project-card">
             <div
               className="wireframe"
-              style={{ backgroundImage: "url('/imgs/figma3.png')" }}
+              style={{
+                backgroundImage: "url('/imgs/figma3.png')",
+                width: "100%",
+                height: "220px",
+                backgroundSize: "cover"
+              }}
             />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Design of a Movie database where you are able to search and read about a movie.</p>
           </div>
         </div>
       </section>

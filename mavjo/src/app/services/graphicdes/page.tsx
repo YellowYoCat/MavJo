@@ -7,7 +7,7 @@ const page = () => {
 
       {/* HERO */}
       <section className="hero">
-        <h1>WEB DESIGN</h1>
+        <h1>GRAPHIC DESIGN</h1>
         <p className="breadcrumbs">Services / Service Details</p>
 
         <div className="hero-frame">
@@ -83,31 +83,39 @@ const page = () => {
             <div
               className="wireframe"
               style={{
-                backgroundImage: "url('/imgs/figma1.png')",
+                backgroundImage: "url('/imgs/graphicDesign/MFFCard.png')",
                 width: "100%",
-                height: "220px"
+                height: "220px",
+                backgroundSize: "cover"
               }}
             />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Redesign of Mitchell fence & fab</p>
           </div>
 
           <div className="project-card">
             <div
               className="wireframe"
-              style={{ backgroundImage: "url('/imgs/figma2.png')",
+              style={{
+                backgroundImage: "url('/imgs/graphicDesign/salvosLogo.png')",
+                width: "100%",
+                height: "200px",
+                backgroundSize: "cover"
+              }}
+            />
+            <p>a redesign of a Logo</p>
+          </div>
+
+          <div className="project-card">
+            <div
+              className="wireframe"
+              style={{
+                backgroundImage: "url('/imgs/graphicDesign/timeTurner.png')",
                  width: "100%",
-                height: "50pxpx"
-               }}
+                height: "200px",
+                backgroundSize: "cover"
+              }}
             />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-
-          <div className="project-card">
-            <div
-              className="wireframe"
-              style={{ backgroundImage: "url('/imgs/figma3.png')" }}
-            />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>a redesign of a Logo</p>
           </div>
         </div>
       </section>
