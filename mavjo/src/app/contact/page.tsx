@@ -21,13 +21,13 @@ const page = () => {
         <p className="sub">Home</p>
         <p>Contact</p>
       </div>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
 
 
@@ -35,7 +35,7 @@ const page = () => {
       <div className='contact-form'>
         <div className="hudContainer">
 
-         
+
           <Image
             src="/imgs/topcorner.png"
             alt=""
@@ -69,61 +69,56 @@ const page = () => {
             className="hudRight"
           />
 
-          
+
           <div className="contactWrapper">
             <h2>Contact Us</h2>
 
-            <form action="mailto: mavjo147@gmail.com" 
-                  method="post" 
-                  encType="text/plain"
-                  name='EmailForm'
-                  className="contactForm">
-              <label htmlFor="name">
+            <form
+              action="https://formspree.io/f/xnjbjjvb"
+              method="POST"
+              className="contactForm"
+            >
+              <label>
                 <span>Name</span>
-                <input type="text" id="name" name='name' />
+                <input type="text" name="name" required />
               </label>
 
-              <label htmlFor='email'>
+              <label>
                 <span>Email</span>
-                <input type="email" id="email" name='email' />
+                <input type="email" name="email" required />
               </label>
 
-              <label htmlFor='message'>
+              <label>
                 <span>Message</span>
-                <textarea id="message" name='message' />
+                <textarea name="message" required />
               </label>
 
-              <Link href="" className="consultation-link">
+              <button type="submit" className="consultation-link">
                 <div className="consultation-banner">
-                  <Image
-                    src="/imgs/btn.png"
-                    alt="Book a Consultation"
-                    width={200}
-                    height={200}
-                    className="banner-image"
-                  />
+                  <Image src="/imgs/btn.png" alt="" width={200} height={200} />
                   <div className="banner-overlay">
                     <span className="banner-text">Message</span>
                   </div>
                 </div>
-              </Link>
+              </button>
             </form>
+
           </div>
 
         </div>
 
         <section className="socialsSection">
-      <h2 className="title">SOCIALS</h2>
+          <h2 className="title">SOCIALS</h2>
 
-      <div className="icons">
-        <Link href="#"><span className="circle"></span></Link>
-        <Link href="#"><span className="circle"></span></Link>
-        <Link href="#"><span className="circle"></span></Link>
-        <Link href="#"><span className="circle"></span></Link>
-        <Link href="#"><span className="circle"></span></Link>
-        <Link href="#"><span className="circle"></span></Link>
-      </div>
-    </section>
+          <div className="icons">
+            <Link href="#"><span className="circle"></span></Link>
+            <Link href="#"><span className="circle"></span></Link>
+            <Link href="#"><span className="circle"></span></Link>
+            <Link href="#"><span className="circle"></span></Link>
+            <Link href="#"><span className="circle"></span></Link>
+            <Link href="#"><span className="circle"></span></Link>
+          </div>
+        </section>
       </div>
     </main>
   )
