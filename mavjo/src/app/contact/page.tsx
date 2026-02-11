@@ -33,7 +33,41 @@ const page = () => {
 
 
       <div className='contact-form'>
-        
+        <div className="hudContainer">
+
+
+          <Image
+            src="/imgs/topcorner.png"
+            alt=""
+            width={500}
+            height={60}
+            className="hudTop"
+            priority
+          />
+
+          <Image
+            src="/imgs/line.png"
+            alt=""
+            width={500}
+            height={60}
+            className="hudBottom"
+          />
+
+          <Image
+            src="/imgs/rightline.png"
+            alt=""
+            width={60}
+            height={400}
+            className="hudLeft"
+          />
+
+          <Image
+            src="/imgs/leftline.png"
+            alt=""
+            width={60}
+            height={400}
+            className="hudRight"
+          />
 
 
           <div className="contactWrapper">
@@ -59,14 +93,9 @@ const page = () => {
                 <textarea name="message" required />
               </label>
 
-              <button type="submit" className="consultation-link">
-                <div className="consultation-banner">
-                  
-                  <div className="banner-overlay">
-                    <span className="banner-text">Message</span>
-                  </div>
-                </div>
-              </button>
+              <button type="submit" className="hud-submit">
+                  <span className="hud-submit-text">SEND MESSAGE</span>
+                </button>
             </form>
 
           </div>
@@ -85,7 +114,7 @@ const page = () => {
             <Link href="#"><span className="circle"></span></Link>
           </div>
         </section>
-      
+      </div>
     </main>
   )
 }
