@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -27,8 +28,21 @@ const page = () => {
             <div className="consultationWrapper">
               <h2>Start the Conversation!</h2>
 
-              <form className="consultationForm">
-                <div className="nameFields">
+              {/* <iframe className='google' src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0zBgXv_F1YCRfKCHdwva8eRne4T3t0nXFAGGaAkjTBaZpLpeyA8fbKeUIY42hqp-8n_1BpL1Fh?gv=true" width="100%" height="600"></iframe> */}
+
+              <div className="dark-iframe-wrapper">
+                <iframe
+                  className='google'
+                  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0zBgXv_F1YCRfKCHdwva8eRne4T3t0nXFAGGaAkjTBaZpLpeyA8fbKeUIY42hqp-8n_1BpL1Fh?gv=true"
+                  width="100%"
+                  height="600"
+                ></iframe>
+              </div>
+              <form className="consultationForm"
+                action="https://formspree.io/f/xqedenvl"
+                method="POST"
+              >
+                {/* <div className="nameFields">
                   <label>
                     <span>First Name*</span>
                     <br></br>
@@ -40,19 +54,21 @@ const page = () => {
                     <br></br>
                     <input type="text" />
                   </label>
-                </div>
+                </div> */}
 
                 <div className='contactFields'>
-                  <label>
-                    <span>Email*</span>
-                    <br></br>
-                    <input type="email" />
-                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value="placeholder@email.com"
+                    readOnly
+                    hidden
+                  />
 
                   <label>
                     <span>Phone Number*</span>
                     <br></br>
-                    <input type="tel" />
+                    <input type="tel" name='phone' required />
                   </label>
 
                 </div>
@@ -62,30 +78,22 @@ const page = () => {
                     {/* this is a dropdown of our services*/}
                     <span>What are you interested in?</span>
                     <br></br>
-                    <input type="text" />
+                    <input type="text" name='interests' required />
                   </label>
 
                   <label>
                     <span>Tell Us More About It!</span>
                     <br></br>
-                    <textarea rows={4} />
+                    <textarea rows={4} name='message' required />
                   </label>
 
                 </div>
 
 
-                {/* <iframe className='google' src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0zBgXv_F1YCRfKCHdwva8eRne4T3t0nXFAGGaAkjTBaZpLpeyA8fbKeUIY42hqp-8n_1BpL1Fh?gv=true" width="100%" height="600"></iframe> */}
 
-                <div className="dark-iframe-wrapper">
-                  <iframe
-                    className='google'
-                    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0zBgXv_F1YCRfKCHdwva8eRne4T3t0nXFAGGaAkjTBaZpLpeyA8fbKeUIY42hqp-8n_1BpL1Fh?gv=true"
-                    width="100%"
-                    height="600"
-                  ></iframe>
-                </div>
 
-                <Link href="" className="consultation-link">
+                {/* SUBMIT BUTTON */}
+                <button type="submit" className="consultation-link">
                   <div className="consultation-banner">
                     <Image
                       src="/imgs/btn.png"
@@ -98,7 +106,7 @@ const page = () => {
                       <span className="banner-text">Message</span>
                     </div>
                   </div>
-                </Link>
+                </button>
               </form>
             </div>
 

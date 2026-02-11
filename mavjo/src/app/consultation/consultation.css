@@ -305,8 +305,8 @@
 .nameFields,
 .contactFields,
 .additionalFields {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     width: 100%;
 }
@@ -316,7 +316,7 @@
     .nameFields,
     .contactFields,
     .additionalFields {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 1.5rem;
     }
 
