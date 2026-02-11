@@ -12,10 +12,10 @@ const page = () => {
         <img src="/imgs/decorative.jpg" className='decorative' alt="About Banner" width={600} height={50} />
       </div>
 
-      <div className="nav-links">
+      {/* <div className="nav-links">
         <p className="sub">Home</p>
         <p>Schedule</p>
-      </div>
+      </div> */}
       <h2 className='body-text'>
         Schedule Your Free 30-Minute Consultation Today!
         <br></br>

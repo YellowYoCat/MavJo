@@ -131,14 +131,14 @@ export default function Portfolio() {
       <section className="portfolio-hero" aria-labelledby="portfolio-title">
         <div className="hero-content">
           <h1 id="portfolio-title">Portfolio</h1>
-          <nav className="breadcrumb" aria-label="Breadcrumb">
+          {/* <nav className="breadcrumb" aria-label="Breadcrumb">
             <ol>
               <li>
                 <a href="/">Home</a>
               </li>
               <li aria-current="page">Portfolio</li>
             </ol>
-          </nav>
+          </nav> */}
         </div>
       </section>
 

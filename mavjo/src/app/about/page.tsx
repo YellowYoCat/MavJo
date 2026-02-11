@@ -9,10 +9,10 @@ const page = () => {
         <img src="/imgs/decorative.jpg" className='decorative' alt="About Banner" width={600} height={50} />
       </div>
 
-      <div className="nav-links">
+      {/* <div className="nav-links">
         <p className="sub">Home</p>
         <p>About</p>
-      </div>
+      </div> */}
       <p className='body-text'>
         Welcome to MavJo Designs! We are a creative agency dedicated to bringing your ideas to life through innovative design solutions. Our team of talented designers and developers work closely with clients to create stunning visuals and user-friendly experiences.
       </p>

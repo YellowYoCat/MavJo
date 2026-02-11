@@ -17,10 +17,10 @@ const page = () => {
         />
       </div>
 
-      <div className="nav-links">
+      {/* <div className="nav-links">
         <p className="sub">Home</p>
         <p>Contact</p>
-      </div>
+      </div> */}
       <br />
       <br />
       <br />
