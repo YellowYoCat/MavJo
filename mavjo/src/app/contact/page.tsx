@@ -33,41 +33,7 @@ const page = () => {
 
 
       <div className='contact-form'>
-        <div className="hudContainer">
-
-
-          <Image
-            src="/imgs/topcorner.png"
-            alt=""
-            width={500}
-            height={60}
-            className="hudTop"
-            priority
-          />
-
-          <Image
-            src="/imgs/line.png"
-            alt=""
-            width={500}
-            height={60}
-            className="hudBottom"
-          />
-
-          <Image
-            src="/imgs/rightline.png"
-            alt=""
-            width={60}
-            height={400}
-            className="hudLeft"
-          />
-
-          <Image
-            src="/imgs/leftline.png"
-            alt=""
-            width={60}
-            height={400}
-            className="hudRight"
-          />
+        
 
 
           <div className="contactWrapper">
@@ -95,7 +61,7 @@ const page = () => {
 
               <button type="submit" className="consultation-link">
                 <div className="consultation-banner">
-                  <Image src="/imgs/btn.png" alt="" width={200} height={200} />
+                  
                   <div className="banner-overlay">
                     <span className="banner-text">Message</span>
                   </div>
@@ -119,7 +85,7 @@ const page = () => {
             <Link href="#"><span className="circle"></span></Link>
           </div>
         </section>
-      </div>
+      
     </main>
   )
 }
