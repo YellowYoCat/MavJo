@@ -93,14 +93,9 @@ const page = () => {
                 <textarea name="message" required />
               </label>
 
-              <button type="submit" className="consultation-link">
-                <div className="consultation-banner">
-                  <Image src="/imgs/btn.png" alt="" width={200} height={200} />
-                  <div className="banner-overlay">
-                    <span className="banner-text">Message</span>
-                  </div>
-                </div>
-              </button>
+              <button type="submit" className="hud-submit">
+                  <span className="hud-submit-text">SEND MESSAGE</span>
+                </button>
             </form>
 
           </div>

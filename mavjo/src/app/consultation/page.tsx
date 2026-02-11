@@ -68,18 +68,26 @@ const page = () => {
                   <label>
                     <span>Phone Number*</span>
                     <br></br>
-                    <input type="tel" name='phone' required />
+                    <input type="tel" name='phone' required pattern="^\+?1?\s*(\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\d{4}$" />
                   </label>
 
                 </div>
 
                 <div className='additionalFields'>
-                  <label>
-                    {/* this is a dropdown of our services*/}
-                    <span>What are you interested in?</span>
-                    <br></br>
-                    <input type="text" name='interests' required />
-                  </label>
+                  <select name="interests" required defaultValue="">
+                    <option value="" disabled>
+                      What Are You Interested In?
+                    </option>
+                    <option value="documentation">Documentation</option>
+                    <option value="graphic-design">Graphic Design</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="redesigns">Redesigns</option>
+                    <option value="seo-basics">SEO Basics</option>
+                    <option value="small-business">Small Business</option>
+                    <option value="ui-ux-design">UI / UX Design</option>
+                    <option value="web-design">Web Design</option>
+                    <option value="web-development">Web Development</option>
+                  </select>
 
                   <label>
                     <span>Tell Us More About It!</span>
@@ -89,23 +97,9 @@ const page = () => {
 
                 </div>
 
-
-
-
                 {/* SUBMIT BUTTON */}
-                <button type="submit" className="consultation-link">
-                  <div className="consultation-banner">
-                    <Image
-                      src="/imgs/btn.png"
-                      alt="Book a Consultation"
-                      width={200}
-                      height={200}
-                      className="banner-image"
-                    />
-                    <div className="banner-overlay">
-                      <span className="banner-text">Message</span>
-                    </div>
-                  </div>
+                <button type="submit" className="hud-submit">
+                  <span className="hud-submit-text">SEND MESSAGE</span>
                 </button>
               </form>
             </div>
