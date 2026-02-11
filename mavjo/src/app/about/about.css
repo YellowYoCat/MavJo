@@ -217,43 +217,244 @@ h2 {
   opacity: 0.9;
 }
 
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
+/* ============== TABLET (768px - 1024px) ============== */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .about {
+    margin: 0 60px;
+    margin-top: -60px;
+    margin-left: 60px;
+  }
 
+  h1 {
+    font-size: 90px;
+    letter-spacing: 0.1em;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .mm {
+    margin: 0 5%;
+    gap: 40px;
+  }
+
+  .johanna {
+    width: 320px;
+    height: 400px;
+  }
+
+  .erin {
+    width: 350px;
+    height: 400px;
+  }
+
+  .body-text {
+    padding: 35px 40px;
+    font-size: 13.5px;
+  }
+
+  .nav-links {
+    gap: 30px;
+    max-width: 80%;
+  }
+}
+
+/* ============== LARGE PHONES (481px - 768px) ============== */
+@media (max-width: 768px) {
   .about {
     margin: 0 30px;
+    margin-top: -40px;
+    margin-left: 30px;
+    font-size: 0.9rem;
+  }
+
+  .about::before {
+    top: -25px;
   }
 
   h1 {
     font-size: 56px;
-    margin: 40px 0;
+    margin: 40px 0 20px;
+    letter-spacing: 0.08em;
   }
 
   h2 {
     font-size: 32px;
     padding: 0 40px;
+    margin: 15px 0;
   }
 
   .mm {
     flex-direction: column;
     text-align: center;
-    margin: 0;
+    margin: 0 20px;
+    gap: 30px;
   }
 
   .body-text {
     font-size: 13px;
-    padding: 30px;
+    padding: 25px 25px;
+    line-height: 1.7;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .body-text::before,
+  .body-text::after {
+    width: 15px;
+    height: 15px;
   }
 
   .divider {
-    width: 100%;
+    width: 90%;
+    margin: 40px auto;
+  }
+
+  .nav-links {
+    gap: 20px;
+    padding: 15px 0;
+    margin: 0 auto 30px;
+    width: 95%;
+  }
+  
+  .nav-links p {
+    font-size: 0.9rem;
   }
 
   .erin,
   .johanna {
     width: 280px;
     height: 320px;
-    margin-top: 30px;
+    margin-top: 20px;
+  }
+  
+  .erin {
+    width: 300px;
   }
 }
 
+/* ============== SMALL PHONES (320px - 480px) ============== */
+@media (max-width: 480px) {
+  .about {
+    margin: 0 20px;
+    margin-top: -30px;
+    margin-left: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+  
+  .about::before {
+    top: -20px;
+    opacity: 0.5;
+  }
+
+  h1 {
+    font-size: 38px;
+    margin: 30px 0 15px;
+    letter-spacing: 0.06em;
+  }
+
+  h2 {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    padding: 12px 0;
+  }
+  
+  .nav-links p {
+    font-size: 0.8rem;
+    padding: 4px 0;
+  }
+
+  .body-text {
+    font-size: 12px;
+    padding: 20px 18px;
+    width: 85%;
+  }
+  
+  .body-text::before,
+  .body-text::after {
+    width: 12px;
+    height: 12px;
+    border-width: 1.5px;
+  }
+
+  .divider {
+    width: 95%;
+    margin: 30px auto;
+    background: repeating-linear-gradient(
+      to right,
+      var(--hud-blue),
+      var(--hud-blue) 12px,
+      transparent 12px,
+      transparent 24px
+    );
+  }
+
+  .mm {
+    margin: 0 10px;
+    gap: 20px;
+  }
+
+  .erin,
+  .johanna {
+    width: 220px;
+    height: 260px;
+    margin-top: 15px;
+  }
+  
+  .erin {
+    width: 240px;
+  }
+  
+  .about-header {
+    padding: 40px 15px 20px;
+  }
+  
+  .portfolio-banner {
+    margin: 20px 0;
+  }
+  
+  .divider {
+    margin: 30px auto;
+  }
+}
+
+/* ============== EXTRA SMALL (below 320px) ============== */
+@media (max-width: 320px) {
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+  
+  .nav-links {
+    gap: 12px;
+  }
+  
+  .nav-links p {
+    font-size: 0.75rem;
+  }
+  
+  .body-text {
+    padding: 18px 15px;
+    width: 90%;
+  }
+  
+  .erin,
+  .johanna {
+    width: 180px;
+    height: 220px;
+  }
+  
+  .erin {
+    width: 200px;
+  }
+}
