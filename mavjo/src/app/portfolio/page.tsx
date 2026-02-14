@@ -5,7 +5,7 @@ import Image from "next/image";
 import { memo, useMemo, useState } from "react";
 
 // Define proper types
-type ProjectCategory = "all" | "figma" | "marketing" | "web";
+type ProjectCategory = "all" | "UI/UX" | "Redesign" | "web";
 type Project = {
   id: string;
   title: string;
@@ -19,34 +19,34 @@ type Project = {
 const projects: Project[] = [
   {
     id: "project-1",
-    title: "E-commerce Dashboard",
-    desc: "A comprehensive dashboard for managing online store operations, featuring real-time analytics and inventory management.",
-    img: "/imgs/ecommerce-dashboard.jpg",
+    title: "MAVJO",
+    desc: "the starting point for MavJo our website.",
+    img: "/imgs/mavjo.png",
     category: "web",
-    alt: "E-commerce dashboard interface showing sales analytics",
+    alt: " picture of the starting point for MavJo our website.",
   },
   {
     id: "project-2",
     title: "Brand Identity Design",
     desc: "Complete brand identity package including logo design, color palette, typography, and brand guidelines.",
     img: "/imgs/brand-identity.jpg",
-    category: "figma",
+    category: "UI/UX",
     alt: "Brand identity mockup with logo and color palette",
   },
   {
     id: "project-3",
-    title: "Social Media Campaign",
-    desc: "Integrated marketing campaign across Instagram, LinkedIn, and Twitter resulting in 200% engagement increase.",
-    img: "/imgs/social-campaign.jpg",
-    category: "marketing",
-    alt: "Social media marketing campaign analytics dashboard",
+    title: "Trax App redesign",
+    desc: "Trax redesign for the Trax app",
+    img: "/imgs/redesign/traxMain.png",
+    category: "Redesign",
+    alt: "Picture of the design of the trax app",
   },
   {
     id: "project-4",
     title: "Mobile App Design",
     desc: "User-centered mobile application design with focus on accessibility and seamless user experience.",
     img: "/imgs/mobile-app.jpg",
-    category: "figma",
+    category: "UI/UX",
     alt: "Mobile app interface design showing multiple screens",
   },
 ];
@@ -54,8 +54,8 @@ const projects: Project[] = [
 // Filter button configuration
 const filterButtons = [
   { id: "all", label: "SHOW ALL", category: "all" },
-  { id: "figma", label: "FIGMA DESIGNS", category: "figma" },
-  { id: "marketing", label: "MARKETING", category: "marketing" },
+  { id: "fUI/UX", label: "UI/UX", category: "UI/UX" },
+  { id: "Redesign", label: "REDESIGN", category: "Redesign" },
   { id: "web", label: "WEB DESIGN/DEVELOPMENT", category: "web" },
 ] as const;
 
