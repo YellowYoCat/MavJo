@@ -5,7 +5,7 @@ import Image from "next/image";
 import { memo, useMemo, useState } from "react";
 
 // Define proper types
-type ProjectCategory = "all" | "UI/UX" | "Redesign" | "web";
+type ProjectCategory = "all" | "UI/UX" | "Redesign" | "web" | "graphic";
 type Project = {
   id: string;
   title: string;
@@ -49,6 +49,54 @@ const projects: Project[] = [
     category: "UI/UX",
     alt: "Mobile app interface design showing multiple screens",
   },
+  {
+    id: "project-5",
+    title: "Character Cove",
+    desc: "A user social app to talk about their personal characters they have made",
+    img: "/imgs/UI/characterCove.png",
+    category: "UI/UX",
+    alt: "a social media website",
+  },
+  {
+    id: "project-6",
+    title: "Super Nom Wrangler",
+    desc: "A website focused on letting users discover local places to eat without the hassle of flitering through bigger chains",
+    img: "/imgs/UI/SNWsmall.png",
+    category: "web",
+    alt: "a food finding website",
+  },
+  {
+    id: "project-7",
+    title: "Mitchell Fence and Fab",
+    desc: "A small company welding business site",
+    img: "/imgs/webDesign/MFF.png",
+    category: "web",
+    alt: "mitchell fence and fab website design",
+  },
+  {
+    id: "project-8",
+    title: "Time Turner",
+    desc: "Sketches for a small antique store that needed an revamped logo",
+    img: "/imgs/graphicDesign/timeTurnerSketch.png",
+    category: "graphic",
+    alt: "page of logo sketches",
+  },
+  {
+    id: "project-9",
+    title: "Time Turner",
+    desc: "Finalized business card with logo",
+    img: "/imgs/graphicDesign/timeTurner.png",
+    category: "graphic",
+    alt: "business card with logo",
+  },
+  {
+    id: "project-10",
+    title: "Verdigris High School Volleyball Team",
+    desc: "A door wrap custom designed and eventually hand made and installed for the Verdigris High school volleyball team.",
+    img: "/imgs/graphicDesign/VDoorWrap.png",
+    category: "graphic",
+    alt: "volleyball door wrap",
+  },
 ];
 
 // Filter button configuration
@@ -57,6 +105,8 @@ const filterButtons = [
   { id: "fUI/UX", label: "UI/UX", category: "UI/UX" },
   { id: "Redesign", label: "REDESIGN", category: "Redesign" },
   { id: "web", label: "WEB DESIGN/DEVELOPMENT", category: "web" },
+  { id: "wgraphicb", label: "GRAPHIC DESIGN", category: "graphic" },
+
 ] as const;
 
 // Memoized project card component
@@ -88,7 +138,7 @@ const ProjectCard = memo(({ project, index }: { project: Project; index: number 
           <span className={`category-badge category-${project.category}`}>
             {project.category.toUpperCase()}
           </span>
-          <button 
+          {/* <button 
             className="view-project-btn"
             aria-label={`View details for ${project.title}`}
           >
@@ -106,7 +156,7 @@ const ProjectCard = memo(({ project, index }: { project: Project; index: number 
                 d="M8 15L7 14L12.2 9H0V7H12.2L7 2L8 1L15 8L8 15Z" 
               />
             </svg>
-          </button>
+          </button> */}
         </div>
       </div>
     </article>
