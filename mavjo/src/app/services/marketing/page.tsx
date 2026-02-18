@@ -65,7 +65,7 @@ const page = () => {
       </section>
 
       {/* PROJECTS */}
-      <section className="projects">
+      {/* <section className="projects">
         <h3>(SERVICE) PROJECTS</h3>
 
         <div className="project-grid">
@@ -103,7 +103,7 @@ const page = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
     </main>
   );
