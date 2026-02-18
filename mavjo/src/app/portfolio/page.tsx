@@ -26,28 +26,12 @@ const projects: Project[] = [
     alt: " picture of the starting point for MavJo our website.",
   },
   {
-    id: "project-2",
-    title: "Brand Identity Design",
-    desc: "Complete brand identity package including logo design, color palette, typography, and brand guidelines.",
-    img: "/imgs/brand-identity.jpg",
-    category: "UI/UX",
-    alt: "Brand identity mockup with logo and color palette",
-  },
-  {
     id: "project-3",
     title: "Trax App redesign",
     desc: "Trax redesign for the Trax app",
     img: "/imgs/redesign/traxMain.png",
     category: "Redesign",
     alt: "Picture of the design of the trax app",
-  },
-  {
-    id: "project-4",
-    title: "Mobile App Design",
-    desc: "User-centered mobile application design with focus on accessibility and seamless user experience.",
-    img: "/imgs/mobile-app.jpg",
-    category: "UI/UX",
-    alt: "Mobile app interface design showing multiple screens",
   },
   {
     id: "project-5",

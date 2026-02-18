@@ -102,7 +102,7 @@ const page = () => {
 
         </div>
 
-        <section className="socialsSection">
+        {/* <section className="socialsSection">
           <h2 className="title">SOCIALS</h2>
 
           <div className="icons">
@@ -113,7 +113,7 @@ const page = () => {
             <Link href="#"><span className="circle"></span></Link>
             <Link href="#"><span className="circle"></span></Link>
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   )
